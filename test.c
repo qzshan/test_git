@@ -2,6 +2,7 @@
 
 int main(int argc, char* argv[])
 {
+    printf("This is from Git\n");
     printf("Hello GitHub! ");
     if (argc > 1)
     {
