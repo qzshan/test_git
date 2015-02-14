@@ -1,4 +1,5 @@
 #include "stdio.h"
+#include "time.h"
 
 int main(int argc, char* argv[])
 {
@@ -6,7 +7,9 @@ int main(int argc, char* argv[])
     printf("Hello GitHub! ");
     if (argc > 1)
     {
-        printf("from %s\n", argv[1]);
+        printf("\tfrom %s\n", argv[1]);
     }
+    time_t tcurrent_time = time(NULL);
+    printf("\t%lu\n", tcurrent_time);
     return 0;
 }
