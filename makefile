@@ -1,5 +1,5 @@
-test : test.c
-	gcc -o test test.c
+test : test.cpp
+	g++ -o test test.cpp
 
 clean :
 	rm test
